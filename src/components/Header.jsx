@@ -12,7 +12,7 @@ const Header = () => {
         <ul className='flex w-1/3 mx-auto -mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-700'>
             {navLinks.map((link, index)=>{
                 return(
-                    <li className='text-[#474747] text-lg cursor-pointer' key={index}>{link}</li>
+                    <li className='text-[#474747] hover:underline cursor-pointer' key={index}>{link}</li>
                 )
             })}
         </ul>
