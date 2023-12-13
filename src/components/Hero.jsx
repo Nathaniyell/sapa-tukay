@@ -1,4 +1,5 @@
 import React from 'react'
+import Settings from "../assets/settings.png"
 
 const Hero = () => {
   return (
@@ -17,8 +18,8 @@ const Hero = () => {
                 </span>
           </div>
           <span className='flex items-center justify-between w-[55%] mt-4'>
-            <button className='border border-lime-900 bg-teal-800 text-white py-1 px-10 rounded-md'>Get started</button>
-            <span>How it works</span>
+            <button className='border border-lime-900 bg-teal-800 text-white py-1 px-8 py-2 rounded-md'>Get started</button>
+            <span className='hover:underline flex items-center'><img className='inline' src={Settings} alt="Settings" />&nbsp;How it works</span>
           </span>
         </div>
     </div>

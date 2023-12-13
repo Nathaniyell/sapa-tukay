@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="bg-lime-200 min-h-screen">
+    <div className="bg-[#ebfbb3] min-h-screen">
       <Header />
       <Hero />
     </div>
