@@ -7,7 +7,7 @@ const Header = () => {
   const navLinks = ["Home", "Services", "Features", "Contact"];
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2">
+    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10">
       <div className="flex items-center justify-between w-11/12 md:w-fit">
         <img src={Logo} alt="Logo" />
         <button
@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <div></div>
       <ul
-        className={`flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-teal-600 ${
+        className={`z-10 flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-teal-600 ${
           navMobile ? "translate-x-0" : "-translate-x-[200%]"
         } transition-transform md:transform-none`}
       >
@@ -34,7 +34,7 @@ const Header = () => {
           );
         })}
       </ul>
-      <aside className={`mt-4 flex flex-col md:flex-row md:gap-6 gap-4 items-center mx-auto ${
+      <aside className={`z-10 mt-4 flex flex-col md:flex-row md:gap-6 gap-4 items-center mx-auto ${
           navMobile ? "translate-x-0" : "-translate-x-[250%]"
         } transition-transform md:transform-none`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
