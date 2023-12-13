@@ -15,7 +15,9 @@ const Header = () => {
             </button>
           
         </div>
-        <ul className='flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-400'>
+        <div>
+                 </div>
+                <ul className={`flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-400 ${navMobile?"-translate-x-[200%]": "translate-x-0"} transition-transform`}>
             {navLinks.map((link, index)=>{
                 return(
                     <li className='text-[#474747] text-xl my-2 hover:underline cursor-pointer' key={index}>{link}</li>
