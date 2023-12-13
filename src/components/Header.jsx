@@ -1,4 +1,5 @@
 import React from 'react'
+import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from '../assets/logo.png'
 
 const Header = () => {
@@ -19,6 +20,7 @@ const Header = () => {
             <button className='border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md'>Login</button>
             <button className='py-1 px-6 rounded-md border border-teal-800 bg-inherit'>Sign up</button>
         </aside>
+        <RxHamburgerMenu className='text-4xl font-bold text-lime-900 md:hidden' />
     </nav>
   )
 }
