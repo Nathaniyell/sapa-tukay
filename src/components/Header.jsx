@@ -1,6 +1,6 @@
 import React from 'react'
 
-const header = () => {
+const Header = () => {
     const navLinks = ["Home", "Services", "Features", "Contact"]
   return (
     <nav className='flex items-center justify-between w-10/12 mx-auto'>
@@ -20,4 +20,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
