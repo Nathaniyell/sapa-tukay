@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { GrClose } from "react-icons/gr";
 import Logo from '../assets/logo.png'
 
 const Header = () => {
     const navLinks = ["Home", "Services", "Features", "Contact"]
+    const [navMobile, setNavMobile] = useState(false)
   return (
     <nav className='flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 '>
         <div className='flex items-center justify-between w-11/12'>
             <img src={Logo} alt="Logo" />
-            <RxHamburgerMenu className='text-4xl font-bold text-lime-900 md:hidden' />
+            <button className='text-4xl font-bold text-lime-900 md:hidden' onClick={()=>setNavMobile(!navMobile)}>
+                {navMobile?  <RxHamburgerMenu className='' /> : <GrClose /> }
+            </button>
+          
         </div>
         <ul className='flex w-2/3 gap-2 md:gap-0 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-400'>
             {navLinks.map((link, index)=>{
