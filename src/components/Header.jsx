@@ -11,13 +11,13 @@ const Header = () => {
         <div className='flex items-center justify-between w-11/12 md:w-fit'>
             <img src={Logo} alt="Logo" />
             <button className='text-4xl font-bold text-lime-900 md:invisible' onClick={()=>setNavMobile(!navMobile)}>
-                {navMobile?  <RxHamburgerMenu /> : <GrClose /> }
+                {navMobile? <GrClose />   :<RxHamburgerMenu /> }
             </button>
           
         </div>
         <div>
                  </div>
-                <ul className={`flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-400 ${navMobile?"-translate-x-[200%]": "translate-x-0"} transition-transform`}>
+                <ul className={`flex w-2/3 gap-2 lg:gap-2 md:w-1/3 mx-auto md:-mr-1 items-center justify-around md:bg-inherit flex-col md:flex-row bg-green-400 ${navMobile?"translate-x-0": "-translate-x-[200%]"} transition-transform md:transform-none`}>
             {navLinks.map((link, index)=>{
                 return(
                     <li className='text-[#474747] text-xl my-2 hover:underline cursor-pointer' key={index}>{link}</li>
