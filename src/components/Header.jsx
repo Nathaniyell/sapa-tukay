@@ -7,7 +7,7 @@ const Header = () => {
   const navLinks = ["Home", "Services", "Features", "Contact"];
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 ">
+    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2">
       <div className="flex items-center justify-between w-11/12 md:w-fit">
         <img src={Logo} alt="Logo" />
         <button
@@ -34,7 +34,7 @@ const Header = () => {
           );
         })}
       </ul>
-      <aside className={`mt-4 flex flex-col md:flex-row md:gap-8 gap-4 items-center mx-auto ${
+      <aside className={`mt-4 flex flex-col md:flex-row md:gap-6 gap-4 items-center mx-auto ${
           navMobile ? "translate-x-0" : "-translate-x-[250%]"
         } transition-transform md:transform-none`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
