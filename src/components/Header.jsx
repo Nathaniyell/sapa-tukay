@@ -11,7 +11,7 @@ const Header = () => {
         <div className='flex items-center justify-between w-11/12'>
             <img src={Logo} alt="Logo" />
             <button className='text-4xl font-bold text-lime-900 md:hidden' onClick={()=>setNavMobile(!navMobile)}>
-                {navMobile?  <RxHamburgerMenu className='' /> : <GrClose /> }
+                {navMobile?  <RxHamburgerMenu  /> : <GrClose /> }
             </button>
           
         </div>
