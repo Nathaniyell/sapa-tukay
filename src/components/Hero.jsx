@@ -4,7 +4,7 @@ import HeroImg from "../assets/herologo.png"
 
 const Hero = () => {
   return (
-    <div className='absolute top-32 right-20 md:top-16 md:right-0 flex items-center justify-between flex-col-reverse md:flex-row z-0'>
+    <div className='absolute top-32 right-20 md:-top-10 md:right-0 flex items-center justify-between flex-col-reverse md:flex-row z-0 md:relative'>
         <div className='w-full md:mx-auto md:w-[44%] ml-20 text-[#474747]'>
             <h1 className='text-[40px] md:text-6xl font-semibold leading-relaxed'>Get your urgent 2k</h1>
             <p className='text-xl font-medium'>No cash, No wahala. Get our application and deal with Sapa</p>
