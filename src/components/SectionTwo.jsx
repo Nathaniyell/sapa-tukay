@@ -43,7 +43,7 @@ function SectionTwo() {
           );
         })}
       </div>
-      <section className="bg-cyan-800 p-4 flex justify-between h-96">
+      <section className="bg-[#00545F] p-4 flex justify-between h-96">
         <img src={greetBros2} className="w-2/5" alt="Greet Bros" />
         <img
           src={sectionbanner}
