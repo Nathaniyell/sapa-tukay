@@ -24,10 +24,11 @@ function SectionTwo() {
         <h1 className="text-3xl leading-loose">What you stand to benefit</h1>
         <p className="text-xl">This is how our product works</p>
       </div>
-      <div>
+      <div className="flex flex-col md:flex-row justify-between items-center">
         {cards.map((card) => {
           return (
-            <div>
+            <div key={card.title} className="bg-white p-4 rounded-md">
+                <img src={card.img} alt={card.title} />
               <h5 className="text-center text-[#474747] text-2xl font-medium">
                 {card.title}
               </h5>
