@@ -35,7 +35,7 @@ const Header = () => {
         })}
       </ul>
       <aside className={`z-10 mt-4 flex flex-col md:flex-row md:gap-6 gap-4 items-center mx-auto ${
-          navMobile ? "translate-x-0" : "-translate-x-[250%]"
+          navMobile ? "translate-x-0" : "-translate-x-[300%]"
         } transition-transform md:transform-none`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
           Login

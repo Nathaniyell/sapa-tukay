@@ -2,6 +2,9 @@ import React from "react";
 import lady from "../assets/lady_sapa.png";
 import greetBros from "../assets/greet_bros.png";
 import guy from "../assets/guy_sapa.png";
+import greetBros2 from "../assets/greet_brosbigimage.png";
+import sectionbanner from "../assets/sectionbannerTwo.png";
+import tukayNotes from "../assets/money.png";
 
 function SectionTwo() {
   const cards = [
@@ -28,7 +31,7 @@ function SectionTwo() {
         {cards.map((card) => {
           return (
             <div key={card.title} className="bg-white p-4 rounded-md">
-                <img src={card.img} alt={card.title} className="mx-auto" />
+              <img src={card.img} alt={card.title} className="mx-auto" />
               <h5 className="leading-loose text-center text-[#474747] text-2xl font-medium">
                 {card.title}
               </h5>
@@ -40,6 +43,27 @@ function SectionTwo() {
           );
         })}
       </div>
+      <section className="bg-cyan-800 p-4 flex justify-between h-96">
+        <img src={greetBros2} className="w-2/5" alt="Greet Bros" />
+        <img
+          src={sectionbanner}
+          className="w-2/3 self-start md:w-[40%] object-cover"
+          alt=""
+        />
+      </section>
+
+      <section>
+        <div className="w-10/12 md:mx-auto md:w-[44%] ml-20 text-[#474747]">
+          <h1 className="text-[40px] md:text-6xl font-semibold leading-relaxed">
+            Urgent Tukay - the Notes
+          </h1>
+          <p className="text-xl font-medium">
+            No cash, No wahala get our application and deal with Sapa
+          </p>
+
+          <img className="" src={tukayNotes} alt="tukay notes" />
+        </div>
+      </section>
     </>
   );
 }
