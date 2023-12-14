@@ -52,8 +52,8 @@ function SectionTwo() {
         />
       </section>
 
-      <section className="flex justify-between items-center">
-        <div className="w-10/12 md:mx-auto text-[#474747]">
+      <section className="w-10/12 md:mx-auto flex justify-between items-center">
+        <div className=" text-[#474747]">
           <h1 className="text-[40px] md:text-6xl font-semibold leading-relaxed">
             Urgent Tukay - the Notes
           </h1>
