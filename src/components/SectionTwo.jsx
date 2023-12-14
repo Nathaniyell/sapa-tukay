@@ -52,17 +52,17 @@ function SectionTwo() {
         />
       </section>
 
-      <section>
-        <div className="w-10/12 md:mx-auto md:w-[44%] ml-20 text-[#474747]">
+      <section className="flex justify-between items-center">
+        <div className="w-10/12 md:mx-auto text-[#474747]">
           <h1 className="text-[40px] md:text-6xl font-semibold leading-relaxed">
             Urgent Tukay - the Notes
           </h1>
           <p className="text-xl font-medium">
             No cash, No wahala get our application and deal with Sapa
           </p>
-
-          <img className="" src={tukayNotes} alt="tukay notes" />
+          <button className='border border-lime-900 bg-teal-800 text-white px-8 py-2 rounded-md'>Get started</button>
         </div>
+          <img className="" src={tukayNotes} alt="tukay notes" />
       </section>
     </>
   );
