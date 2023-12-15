@@ -35,7 +35,7 @@ function SectionTwo() {
               <h5 className="leading-loose text-center text-[#474747] text-2xl font-medium">
                 {card.title}
               </h5>
-              <p>
+              <p className="text-center">
                 In Nigerian Pidgin English, Sapa is sometimes used to describe
                 financial hardship or running out of money.
               </p>
