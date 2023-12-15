@@ -23,7 +23,7 @@ function SectionTwo() {
   ];
   return (
     <>
-      <div className="text-[#474747] text-center font-medium">
+      <div className="text-[#474747] text-center font-medium ">
         <h1 className="text-3xl leading-loose">What you stand to benefit</h1>
         <p className="text-xl">This is how our product works</p>
       </div>
