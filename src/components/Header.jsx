@@ -26,8 +26,8 @@ const Header = () => {
   }, [navColourChange]);
   return (
     
-    <nav className={` ${navColourChange ? "bg-white shadow-md" : "bg-inherit"} flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0 right-0 left-0`}>
-      <div className="flex items-center justify-between w-full md:w-fit">
+    <nav className={` ${navColourChange && !navMobile && "bg-white shadow-md"} flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0 right-0 left-0`}>
+      <div className="flex items-center justify-between w-full md:w-fit h-1/3 md:h-fit">
         <img src={Logo} className="md:mr-20 lg:mr-0" alt="Logo" />
         <button
           className="text-4xl font-bold cursor-pointer text-lime-900 md:hidden"
