@@ -18,8 +18,8 @@ const Header = () => {
         </button>
       </div>
             <ul
-        className={`bg-[#ebfbb3] z-10 flex w-full lg:w-1/4 mx-auto gap-2 lg:gap-2 items-center justify-around md:bg-inherit flex-col md:flex-row  ${
-          navMobile ? "translate-x-0" : "-translate-x-[200%]"
+        className={`bg-[#ebfbb3] z-10 flex w-96 md:w-full lg:w-1/4 mx-auto gap-2 lg:gap-2 items-center justify-around md:bg-inherit flex-col md:flex-row  ${
+          navMobile ? "translate-x-0" : "translate-x-[250%]"
         } transition-transform md:transform-none border border-teal-800 md:border-none`}
       >
         {navLinks.map((link, index) => {
