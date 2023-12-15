@@ -7,8 +7,8 @@ const Header = () => {
   const navLinks = ["Home", "Services", "Features", "Contact"];
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10">
-      <div className="flex items-center justify-between w-11/12 md:w-fit">
+    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 bg-red-400">
+      <div className="flex items-center justify-between w-full md:w-fit">
         <img src={Logo} alt="Logo" />
         <button
           className="text-4xl font-bold cursor-pointer text-lime-900 md:hidden"
@@ -18,9 +18,9 @@ const Header = () => {
         </button>
       </div>
             <ul
-        className={`bg-[#ebfbb3] z-10 flex w-2/3 gap-2 lg:gap-2 mx-auto md: items-center justify-around md:bg-inherit flex-col md:flex-row  ${
+        className={`bg-[#ebfbb3] z-10 flex w-3/5 mx-auto gap-2 lg:gap-2 items-center justify-around md:bg-inherit flex-col md:flex-row  ${
           navMobile ? "translate-x-0" : "-translate-x-[200%]"
-        } transition-transform md:transform-none`}
+        } transition-transform md:transform-none border border-teal-800 md:border-none`}
       >
         {navLinks.map((link, index) => {
           return (
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
           );
         })}
-      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 flex flex-col md:flex-row gap-4 items-center mx-auto w-full pb-4 md:pb-0`}>
+      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 flex flex-col md:flex-row gap-4 items-center mx-auto pb-4 md:pb-0`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
           Login
         </button>
