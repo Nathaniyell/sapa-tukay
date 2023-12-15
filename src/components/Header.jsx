@@ -26,7 +26,7 @@ const Header = () => {
   }, [navColourChange]);
   return (
     
-    <nav className={` ${navColourChange ? "bg-white" : "bg-inherit"} flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0 right-0 left-0`}>
+    <nav className={` ${navColourChange ? "bg-white shadow-md" : "bg-inherit"} flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0 right-0 left-0`}>
       <div className="flex items-center justify-between w-full md:w-fit">
         <img src={Logo} className="md:mr-20 lg:mr-0" alt="Logo" />
         <button
@@ -51,7 +51,7 @@ const Header = () => {
             </li>
           );
         })}
-      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 lg:ml-20 flex flex-col md:flex-row gap-4 lg:gap-8 items-center mx-auto pb-4 md:pb-0`}>
+      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 lg:ml-20 flex flex-col md:flex-row gap-4 lg:gap-8 items-center mx-auto pb-4 md:pb-0 ${navColourChange && "pr-4"}`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
           Login
         </button>
