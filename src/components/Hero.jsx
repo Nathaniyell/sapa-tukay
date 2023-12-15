@@ -18,7 +18,7 @@ const Hero = () => {
                 <p className='text-sm'>Downloads</p>
                 </span>
           </div>
-          <span className='flex items-center justify-between md:w-[55%] my-4'>
+          <span className='flex items-center justify-between lg:w-[55%] my-4'>
             <button className='border border-lime-900 bg-teal-800 text-white px-8 py-2 rounded-md'>Get started</button>
             <span className='hover:underline flex items-center font-light'><img className='inline' src={Settings} alt="Settings" />&nbsp;How it works</span>
           </span>
