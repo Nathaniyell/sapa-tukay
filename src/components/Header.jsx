@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import Logo from "../assets/logo.png";
@@ -6,8 +6,27 @@ import Logo from "../assets/logo.png";
 const Header = () => {
   const navLinks = ["Home", "Services", "Features", "Contact"];
   const [navMobile, setNavMobile] = useState(false);
+  const [navColourChange, setNavColourChange] = useState(false);
+
+  const handleNavColour = () => {
+    if (window.scrollY >= 40) {
+      setNavColourChange(true);
+    } else {
+      setNavColourChange(false);
+    }
+  };
+
+  useEffect(() => {
+    handleNavColour();
+    window.addEventListener("scroll", handleNavColour);
+
+    return () => {
+      window.removeEventListener("scroll", handleNavColour);
+    };
+  }, [navColourChange]);
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0">
+    
+    <nav className={` ${navColourChange ? "bg-white" : "bg-inherit"} flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0 right-0 left-0`}>
       <div className="flex items-center justify-between w-full md:w-fit">
         <img src={Logo} className="md:mr-20 lg:mr-0" alt="Logo" />
         <button
