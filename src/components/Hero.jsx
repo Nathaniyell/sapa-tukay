@@ -23,7 +23,7 @@ const Hero = () => {
             <span className='hover:underline flex items-center font-light'><img className='inline' src={Settings} alt="Settings" />&nbsp;How it works</span>
           </span>
         </div>
-    <img className='w-10/12 md:w-[40%] mx-auto relative -right-10 md:-right-[3.169rem] overflow-x-hidden' src={HeroImg} alt="Hero" />
+    <img className='w-10/12 md:w-[40%] mx-auto relative -right-10 md:-right-8 lg:-right-[3.169rem] overflow-x-hidden' src={HeroImg} alt="Hero" />
     </div>
   )
 }
