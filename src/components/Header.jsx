@@ -7,7 +7,7 @@ const Header = () => {
   const navLinks = ["Home", "Services", "Features", "Contact"];
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10">
+    <nav className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2 z-10 fixed top-0">
       <div className="flex items-center justify-between w-full md:w-fit">
         <img src={Logo} className="md:mr-20 lg:mr-0" alt="Logo" />
         <button

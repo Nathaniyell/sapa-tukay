@@ -10,10 +10,8 @@ function App() {
     <div className="bg-[#ebfbb3] pb-10">
       <Header />
       <Hero />
-      <div className="relative -top-64 md:-top-0">
-      <SectionTwo />
-      </div>
-    </div>
+         <SectionTwo />
+       </div>
   );
 }
 
