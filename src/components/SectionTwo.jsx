@@ -47,7 +47,7 @@ function SectionTwo() {
         <img src={greetBros2} className="md:w-1/3" alt="Greet Bros" />
         <img
           src={sectionbanner}
-          className="w-2/3 md:w-[40%] object-cover"
+          className="md:w-[40%] object-cover"
           alt=""
         />
       </section>
