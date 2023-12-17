@@ -2,9 +2,9 @@ import React from 'react'
 import footerImg from "../assets/footer_img.png"
 
 const Footer = () => {
-    const whatWeDo = ["What we do", "Features", "Blog"]
-    const whoWeAre = ["About us","Careers","Brand Center","Privacy"]
-    const needHelp = ["Contact Us","Help Center","Download","Security Advisories"]
+    const whatWeDo:String[] = ["What we do", "Features", "Blog"]
+    const whoWeAre:String[] = ["About us","Careers","Brand Center","Privacy"]
+    const needHelpS:String[] = ["Contact Us","Help Center","Download","Security Advisories"]
 
 
   return (
