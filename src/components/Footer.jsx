@@ -8,10 +8,10 @@ const Footer = () => {
 
 
   return (
-    <div className='bg-[#00545F] relative mt-48 bottom-0 flex items-center gap-6 flex-col md:flex-row p-4 md:gap-10'>
+    <div className='bg-[#00545F] relative mt-48 bottom-0 flex justify-around items-center gap-6 flex-col md:flex-row p-4 md:gap-10'>
         <img src={footerImg} className='w-1/5' alt='footer'/>
-        <div>
-          <h1>What we do</h1>
+        <div className="text-white text-xl">
+          <h1 className='text-2xl'>What we do</h1>
           <ul>
             {
               whatWeDo.map((item, index)=>{
@@ -20,8 +20,8 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <div>
-          <h1>Who we are </h1>
+        <div className="text-white text-xl">
+          <h1 className='text-2xl'>Who we are </h1>
           <ul>
             {
               whoWeAre.map((item, index)=>{
@@ -30,8 +30,8 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <div>
-          <h1>Need Help?</h1>
+        <div className="text-white text-xl">
+          <h1 className='text-2xl'>Need Help?</h1>
           <ul>
             {
               needHelp.map((item, index)=>{
