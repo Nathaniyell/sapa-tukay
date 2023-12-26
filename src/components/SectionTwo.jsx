@@ -36,17 +36,22 @@ function SectionTwo() {
       <div className="flex flex-col md:flex-row gap-6 justify-between items-center w-11/12 mx-auto my-14">
         {cards.map((card) => {
           return (
-            <div key={card.title} className="bg-white p-4 rounded-md">
+            <motion.div
+            initial={{x: -100, opacity: 0}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration:.5, delay: 0.3}}
+                    viewport={{once: false}}
+            key={card.title} className="bg-white p-4 rounded-md">
               <motion.img 
                     initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
-                    transition={{duration:.5, delay: 0.3}}
+                    transition={{duration:.5, delay: 0.4}}
                     viewport={{once: false}}
               src={card.img} alt={card.title} className="mx-auto" />
               <motion.h5
               initial={{y: 100, opacity: 0}}
               whileInView={{opacity: 1, y:0}}
-              transition={{duration:.6, delay: 0.4}}
+              transition={{duration:.6, delay: 0.5}}
               viewport={{once: false}}
               className="leading-loose text-center text-[#474747] text-2xl font-medium">
                 {card.title}
@@ -54,13 +59,13 @@ function SectionTwo() {
               <motion.p 
                     initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
-                    transition={{duration:.7, delay: 0.5}}
+                    transition={{duration:.7, delay: 0.6}}
                     viewport={{once: false}}
               className="text-center">
                 In Nigerian Pidgin English, Sapa is sometimes used to describe
                 financial hardship or running out of money.
               </motion.p>
-            </div>
+            </motion.div>
           );
         })}
       </div>
