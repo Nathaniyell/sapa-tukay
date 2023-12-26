@@ -4,7 +4,7 @@ import footerImg from "../assets/footer_img.png"
 const Footer = () => {
     const whatWeDo = ["What we do", "Features", "Blog"]
     const whoWeAre = ["About us","Careers","Brand Center","Privacy"]
-    const needHelpS = ["Contact Us","Help Center","Download","Security Advisories"]
+    const needHelp = ["Contact Us","Help Center","Download","Security Advisories"]
 
 
   return (
@@ -15,6 +15,26 @@ const Footer = () => {
           <ul>
             {
               whatWeDo.map((item, index)=>{
+               return  <li key={index}>{item}</li>
+              })
+            }
+          </ul>
+        </div>
+        <div>
+          <h1>Who we are </h1>
+          <ul>
+            {
+              whoWeAre.map((item, index)=>{
+               return  <li key={index}>{item}</li>
+              })
+            }
+          </ul>
+        </div>
+        <div>
+          <h1>Need Help?</h1>
+          <ul>
+            {
+              needHelp.map((item, index)=>{
                return  <li key={index}>{item}</li>
               })
             }
