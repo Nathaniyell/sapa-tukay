@@ -3,7 +3,7 @@ import footerImg from "../assets/footer_img.png"
 
 const Footer = () => {
     const whatWeDo = ["What we do", "Features", "Blog"]
-    const whoWeAre = ["About us","Careers","Brand Center","Privacy"]
+    const whoWeAre = ["About us","Careers","Privacy"]
     const needHelp = ["Contact Us","Help Center","Download"]
 
 
