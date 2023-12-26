@@ -32,8 +32,8 @@ const Footer = () => {
             {
               whoWeAre.map((item, index)=>{
                return  <motion.li
-               initial={{x: -100, opacity: 0}}
-                    whileInView={{opacity: 1, x:0}}
+               initial={{y: 100, opacity: 0}}
+                    whileInView={{opacity: 1, y:0}}
                     transition={{duration:.7, delay: 0.5}}
                     viewport={{once: false}}
                className="hover:underline cursor-pointer my-1" key={index}>{item}</motion.li>
@@ -47,8 +47,8 @@ const Footer = () => {
             {
               needHelp.map((item, index)=>{
                return  <motion.li
-               initial={{x: 100, opacity: 0}}
-                    whileInView={{opacity: 1, x:0}}
+               initial={{y: -100, opacity: 0}}
+                    whileInView={{opacity: 1, y:0}}
                     transition={{duration:.8, delay: 0.7}}
                     viewport={{once: false}}
                className="hover:underline cursor-pointer my-1" key={index}>{item}</motion.li>

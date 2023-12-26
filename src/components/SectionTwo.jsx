@@ -24,21 +24,17 @@ function SectionTwo() {
   ];
   return (
     <>
-      <motion.div
-      initial={{x: -200, opacity: 0}}
-      whileInView={{opacity: 1, x:0}}
-      transition={{duration:.5, delay: 0.3}}
-      viewport={{once: true}}
+      <div
        className="text-[#474747] text-center font-medium ">
         <h1 className="text-3xl leading-loose">What you stand to benefit</h1>
         <p className="text-xl">This is how our product works</p>
-      </motion.div>
+      </div>
       <div className="flex flex-col md:flex-row gap-6 justify-between items-center w-11/12 mx-auto my-14">
         {cards.map((card) => {
           return (
             <motion.div
-            initial={{x: -100, opacity: 0}}
-                    whileInView={{opacity: 1, x:0}}
+            initial={{y: -100, opacity: 0}}
+                    whileInView={{opacity: 1, y:0}}
                     transition={{duration:.5, delay: 0.3}}
                     viewport={{once: false}}
             key={card.title} className="bg-white p-4 rounded-md">
