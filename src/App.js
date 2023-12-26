@@ -16,7 +16,7 @@ function App() {
       <div className="relative top-28">
          <SectionTwo />
          </div>
-         {/* <Footer /> */}
+         <Footer />
        </div>
   );
 }
