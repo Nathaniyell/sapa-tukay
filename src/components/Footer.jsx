@@ -4,12 +4,12 @@ import footerImg from "../assets/footer_img.png"
 const Footer = () => {
     const whatWeDo = ["What we do", "Features", "Blog"]
     const whoWeAre = ["About us","Careers","Brand Center","Privacy"]
-    const needHelp = ["Contact Us","Help Center","Download","Security Advisories"]
+    const needHelp = ["Contact Us","Help Center","Download"]
 
 
   return (
     <div className='bg-[#00545F] relative mt-48 bottom-0 flex justify-around md:items-center gap-6 flex-col md:flex-row p-4 md:gap-10'>
-        <img src={footerImg} className='w-3/5' alt='footer'/>
+        <img src={footerImg} className='w-3/5 md:w-1/4' alt='footer'/>
         <div className="text-white text-lg">
           <h1 className='text-2xl underline'>What we do</h1>
           <ul>
