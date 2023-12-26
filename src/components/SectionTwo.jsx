@@ -5,6 +5,7 @@ import guy from "../assets/guy_sapa.png";
 import greetBros2 from "../assets/greet_brosbigimage.png";
 import sectionbanner from "../assets/sectionbannerTwo.png";
 import tukayNotes from "../assets/money.png";
+import { motion } from "framer-motion";
 
 function SectionTwo() {
   const cards = [
@@ -23,22 +24,42 @@ function SectionTwo() {
   ];
   return (
     <>
-      <div className="text-[#474747] text-center font-medium ">
+      <motion.div
+      initial={{x: -200, opacity: 0}}
+      whileInView={{opacity: 1, x:0}}
+      transition={{duration:.5, delay: 0.3}}
+      viewport={{once: true}}
+       className="text-[#474747] text-center font-medium ">
         <h1 className="text-3xl leading-loose">What you stand to benefit</h1>
         <p className="text-xl">This is how our product works</p>
-      </div>
+      </motion.div>
       <div className="flex flex-col md:flex-row gap-6 justify-between items-center w-11/12 mx-auto my-14">
         {cards.map((card) => {
           return (
             <div key={card.title} className="bg-white p-4 rounded-md">
-              <img src={card.img} alt={card.title} className="mx-auto" />
-              <h5 className="leading-loose text-center text-[#474747] text-2xl font-medium">
+              <motion.img 
+                    initial={{y: 100, opacity: 0}}
+                    whileInView={{opacity: 1, y:0}}
+                    transition={{duration:.5, delay: 0.3}}
+                    viewport={{once: false}}
+              src={card.img} alt={card.title} className="mx-auto" />
+              <motion.h5
+              initial={{y: 100, opacity: 0}}
+              whileInView={{opacity: 1, y:0}}
+              transition={{duration:.6, delay: 0.4}}
+              viewport={{once: false}}
+              className="leading-loose text-center text-[#474747] text-2xl font-medium">
                 {card.title}
-              </h5>
-              <p className="text-center">
+              </motion.h5>
+              <motion.p 
+                    initial={{y: 100, opacity: 0}}
+                    whileInView={{opacity: 1, y:0}}
+                    transition={{duration:.7, delay: 0.5}}
+                    viewport={{once: false}}
+              className="text-center">
                 In Nigerian Pidgin English, Sapa is sometimes used to describe
                 financial hardship or running out of money.
-              </p>
+              </motion.p>
             </div>
           );
         })}
