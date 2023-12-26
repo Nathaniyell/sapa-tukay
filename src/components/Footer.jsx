@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='bg-[#00545F] relative mt-48 bottom-0 flex justify-around md:items-center gap-6 flex-col md:flex-row p-4 md:gap-10'>
         <img src={footerImg} className='w-3/5 md:w-1/4' alt='footer'/>
-        <div className="text-white text-lg hover:bg-rgba p-4">
+        <div className="text-white text-lg hover:bg-rgba p-4 transition-colors ease-in-out delay-300">
           <h1 className='text-2xl underline'>What we do</h1>
           <ul>
             {
@@ -20,7 +20,7 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <div className="text-white text-lg hover:bg-rgba p-4">
+        <div className="text-white text-lg hover:bg-rgba p-4 transition-colors ease-in-out delay-300">
           <h1 className='text-2xl underline'>Who we are </h1>
           <ul>
             {
@@ -30,7 +30,7 @@ const Footer = () => {
             }
           </ul>
         </div>
-        <div className="text-white text-lg hover:bg-rgba p-4">
+        <div className="text-white text-lg hover:bg-rgba p-4 transition-colors ease-in-out delay-300">
           <h1 className='text-2xl underline'>Need Help?</h1>
           <ul>
             {
