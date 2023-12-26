@@ -15,7 +15,7 @@ const Footer = () => {
           <ul>
             {
               whatWeDo.map((item, index)=>{
-               return  <li key={index}>{item}</li>
+               return  <li className="hover:underline cursor-pointer" key={index}>{item}</li>
               })
             }
           </ul>
@@ -25,7 +25,7 @@ const Footer = () => {
           <ul>
             {
               whoWeAre.map((item, index)=>{
-               return  <li key={index}>{item}</li>
+               return  <li className="hover:underline cursor-pointer" key={index}>{item}</li>
               })
             }
           </ul>
@@ -35,7 +35,7 @@ const Footer = () => {
           <ul>
             {
               needHelp.map((item, index)=>{
-               return  <li key={index}>{item}</li>
+               return  <li className="hover:underline cursor-pointer" key={index}>{item}</li>
               })
             }
           </ul>
