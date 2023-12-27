@@ -25,12 +25,12 @@ const Header = () => {
     };
   }, [navColourChange]);
   return (
-    
-    <nav className={` ${navColourChange && "bg-white shadow-md"} flex flex-col md:flex-row items-center justify-between w-full mx-auto pt-2 z-10 fixed top-0 right-0 left-0 h-[85px] md:h-fit`}>
+    <div className={` ${navColourChange && "bg-white shadow-md"} fixed top-0 right-0 left-0 bg-inherit w-full z-10 `}>
+    <nav className={`flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto pt-2  h-[85px] md:h-fit`}>
       <div className="flex items-center justify-between w-full md:w-fit">
         <img src={Logo} className="md:mr-20 lg:mr-0" alt="Logo" />
         <button
-          className="text-4xl mr-4 font-bold cursor-pointer text-lime-900 md:hidden"
+          className="text-4xl font-bold cursor-pointer text-lime-900 md:hidden"
           onClick={() => setNavMobile(!navMobile)}
         >
           {navMobile ? <GrClose /> : <RxHamburgerMenu />}
@@ -61,6 +61,7 @@ const Header = () => {
       </aside>
       </ul>
     </nav>
+    </div>
   );
 };
 
