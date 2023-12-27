@@ -20,7 +20,7 @@ const Footer = () => {
                initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.6, delay: 0.3}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
                className="hover:underline cursor-pointer my-1" key={index}>{item}</motion.li>
               })
             }
@@ -35,7 +35,7 @@ const Footer = () => {
                initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.7, delay: 0.5}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
                className="hover:underline cursor-pointer my-1" key={index}>{item}</motion.li>
               })
             }
@@ -50,7 +50,7 @@ const Footer = () => {
                initial={{y: -100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.8, delay: 0.7}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
                className="hover:underline cursor-pointer my-1" key={index}>{item}</motion.li>
               })
             }

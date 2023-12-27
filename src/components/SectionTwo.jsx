@@ -36,19 +36,19 @@ function SectionTwo() {
             initial={{y: -100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.5, delay: 0.3}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
             key={card.title} className="bg-white p-4 rounded-md">
               <motion.img 
                     initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.5, delay: 0.4}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
               src={card.img} alt={card.title} className="mx-auto" />
               <motion.h5
               initial={{y: 100, opacity: 0}}
               whileInView={{opacity: 1, y:0}}
               transition={{duration:.6, delay: 0.5}}
-              viewport={{once: false}}
+              viewport={{once: true}}
               className="leading-loose text-center text-[#474747] text-2xl font-medium">
                 {card.title}
               </motion.h5>
@@ -56,7 +56,7 @@ function SectionTwo() {
                     initial={{y: 100, opacity: 0}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration:.7, delay: 0.6}}
-                    viewport={{once: false}}
+                    viewport={{once: true}}
               className="text-center">
                 In Nigerian Pidgin English, Sapa is sometimes used to describe
                 financial hardship or running out of money.
