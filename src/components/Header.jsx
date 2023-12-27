@@ -51,7 +51,7 @@ const Header = () => {
             </li>
           );
         })}
-      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 lg:ml-20 flex flex-col md:flex-row gap-4 lg:gap-8 items-center mx-auto pb-4 md:pb-0 ${navColourChange && "md:pr-4 lg:pr-0"}`}>
+      <aside className={`z-10 mt-4 md:mt-0 md:ml-8 lg:ml-32 flex flex-col md:flex-row gap-4 lg:gap-8 items-center mx-auto pb-4 md:pb-0 ${navColourChange && "md:pr-4 lg:pr-0"}`}>
         <button className="border border-lime-900 bg-teal-800 text-white py-1 px-6 rounded-md">
           Login
         </button>
